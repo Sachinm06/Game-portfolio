@@ -18,13 +18,30 @@ body {
     height: 40px;
     background-color: rgb(24, 55, 24);
     position: absolute;
-    bottom: 0;
+    bottom:0;
 }
 #character{
     width: 40px;
     height: 100px;
-    background-color: blue;
+    /* background-color: blue; */
     position: absolute;
     bottom: 40px;
     right: calc(100% - 150px);
+}
+.charimg{
+    width: 70px;
+    height: 100px;
+}
+.platform{
+    width: 100px;
+    height: 30px;
+    /* background-color: black; */
+    position: absolute;
+    left: 220px;
+    top: 590px;
+
+}
+.platform img{
+    width: 150px;
+    height: 40px;
 }

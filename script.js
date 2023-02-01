@@ -31,8 +31,17 @@ function jump() {
         isJumping = true;
     }, 20)
 }
+// function generatePlatform(){
+//     let platforms=document.querySelector('platform')
+//     let platform =document.createElement('div')
+//     platform.setAttribute('class','platform')
+//     platforms.appendChild(platform)
+// }
+// generatePlatform()
+
+
 function control(e) {
-    if (e.key == 'ArrowUp' || e.key == ' ') {
+    if (e.key == 'ArrowUp') {
         jump()
     }
 
