@@ -18,9 +18,9 @@ function jump() {
         if (characterBottom >= groundHeight + 200) {
             clearInterval(upTime);
             downTime = setInterval(() => {
-                if(characterBottom <= groundHeight +10){
+                if (characterBottom <= groundHeight + 10) {
                     clearInterval(downTime);
-                    isJumping=false;
+                    isJumping = false;
                 }
                 characterBottom -= 10;
                 character.style.bottom = characterBottom + 'px';
@@ -31,17 +31,9 @@ function jump() {
         isJumping = true;
     }, 20)
 }
-// function generatePlatform(){
-//     let platforms=document.querySelector('platform')
-//     let platform =document.createElement('div')
-//     platform.setAttribute('class','platform')
-//     platforms.appendChild(platform)
-// }
-// generatePlatform()
-
 
 function control(e) {
-    if (e.key == 'ArrowUp') {
+    if (e.key == 'ArrowUp' || e.key =='w') {
         jump()
     }
 
